@@ -34,7 +34,21 @@ Install the dependencies and devDependencies and start the server. You will need
 composer install
 ```
 
-Then access to the project through localhost URL, if you reach it, will ask to generate the app key.
+If you use 8.0 or above you , you can do so on your CLI by typing...
+
+```sh
+composer update
+```
+
+Then look for the .env.example file which is on the root of the project, create a copy of it on the same root, then change the name to .env
+
+Then go to your project CLI and start the app server by typing...
+
+```sh
+php artisan serve
+```
+
+Then access to the project through the URL given by the CLI, if you reach it, it will ask to generate the app key, do so.
 
 And that's it, you're ready to go.
 
